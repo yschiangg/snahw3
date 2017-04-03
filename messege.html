@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container bgimg">
+        <div class="row">
+            <div class="col-md-3">
+                <div class=" alignR avatarM">
+                    <img class="img-circle" src="https://firebasestorage.googleapis.com/v0/b/project01-34465.appspot.com/o/avatar.jpg?alt=media&token=32810f0c-054e-4b8d-916f-19a51e98c6bb"
+                        width="80px" height="80px"> </img>
+                </div>
+                <div class=" alignR">
+                    <h3>yschiang</h3>
+                </div>
+                <div class=" alignR">
+                    <li><a href="index.html">主頁</a></li>
+                    <li><a href="messege.html">留言給我</a></l2>
+                </div>
+            </div>
+            <div class="col-md-9 alignC ColM">
+                <h3>Send me a messege!</h3>
+                <div style="padding:0.5em 5em 0.5em 5em">
+                    <form>
+                        <div class="form-group">
+                            <label for "user">Name</label><br>
+                            <input type="text" name="user" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Feedback</label><br>
+                            <textarea rows="5" id="feedback"></textarea>
+                        </div>
+                    </form>
+                    <div class="alignR">
+                        <button onclick="processFormData()">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCNdOb_hJTtT1kOqme-nYinvcBLie7Tw_w",
+            authDomain: "project01-34465.firebaseapp.com",
+            databaseURL: "https://project01-34465.firebaseio.com",
+            storageBucket: "project01-34465.appspot.com",
+            messagingSenderId: "537942245726"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+
+
+</body>
